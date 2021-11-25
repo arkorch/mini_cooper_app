@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>ARKO_MiniCooperApp</title>
+
+        <!-- vue library linked in here. documentation at vuejs.org -->
+</head> 
+<body>
+    <main id="app">
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('images/minibanner.jpeg');"> 
+ 
+    <div class="wrapper row0">
+      <div id="topbar" class="hoc clear"> 
+  
+        <p class="fl_left nospace"><i class="fas fa-phone"></i> Mini Coopers are the best!</p>
+        <p class="fl_right nospace"><a class="btn" href="#">Get A Quote</a></p>
+  
+      </div>
+    </div>
+  
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left"> 
+          <h1><a href="index.html">MINI</a></h1>
+        </div>
+        <nav id="mainav" class="fl_right"> 
+  
+  <!-- MAIN NAVIGATION -->
+          <ul class="clear">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">MODELS</a></li>
+            <li><a href="#">DISCOVER</a></li>
+            <li><a href="#">OWNERS</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+  
+    </div>
+  
+    <div id="pageintro" class="hoc clear"> 
+    
+      <article>
+        <p>Get yourself the</p>
+        <h3 class="heading">Electronic Mini</h3>
+        <p>The new electric mini cooper</p>
+        <footer>
+          <ul class="nospace inline pushright">
+            <li><a class="btn" href="#">Know More</a></li>
+            <li><a class="btn inverse" href="#">Test Drive</a></li>
+          </ul>
+        </footer>
+      </article>
+    </div>
+  </div>
+  
+  
+  
+
+
+
+
+
+   <!-- Button trigger for Vue Function -->
+  <div class="carSelect">
+    <ul class="carSelect__ul">
+        <li v-for="car in cars" class="carSelect__li"><button @click="showCar(car)"><br>{{car.Model}}</button></li>
+    </ul>
+  </div>
+           <!-- Box to fetch data from db -->
+    <section class="carData">
+        <div class="carBox"><h1>Model: <span>{{ currentCarData.Model }}</span></h1></div>
+        <div class="carBox"><p>Price: <span>{{ currentCarData.Price }}</span></p></div>
+        <div class="carBox"><p>Milage: {{ currentCarData.FuelEconomy}}</p></div>
+        <div class="photoPanel"><img :src=" 'images/' " alt="Picture of Mini Cooper" class="carPhoto"></div>
+        <section class="carDataBottom">
+        <div class="carBox"><p>Engine: <br class="thestyle">{{ currentCarData.Engine}}</p></div>
+        <div class="carBox"><p>Power: <br class="thestyle">{{ currentCarData.Horsepower}}</p></div>
+        <div class="carBox"><p id="length">Length: <br class="thestyle">{{currentCarData.Length}}</p></div>
+        <div class="carBox"><p id="width">Width: <br class="thestyle">{{ currentCarData.Width}}</p></div>
+        <div class="carBox"><p id="height">Height: <br class="thestyle">{{currentCarData.Height}}</p></div>
+  
+        </section>
+    </section>
+
+  
+  
+  
+  
+
+  
+  
+  
+  <!-- FOOTER -->
+  <div class="bgded overlay" style="background-image:url('images/minibanner.jpeg');"> 
+    
+    <div class="wrapper row4">
+      <footer id="footer" class="hoc clear"> 
+        <hr class="btmspace-50">
+    <!-- FOOTER NAV -->
+        <nav>
+          <ul class="nospace">
+            <li><a href="index.html"><i class="fas fa-lg fa-home"></i></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <div class="wrapper row5">
+      <div id="copyright" class="hoc clear"> 
+        <p class="fl_left">Copyright &copy; 2021 - All Rights Reserved - </p>
+        <p class="fl_right">Mini Cooper Assignment</p>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+
+<!-- templates go here, by default, template tags don't get rendered into the view -->
+
+</main>
+<script src="js/main.js" type="module" defer></script>
+</body>
+</html>
