@@ -1,4 +1,4 @@
-.carSelect {
+.cooperbtn {
     display: flex;
     flex-direction: column;
 
@@ -19,9 +19,9 @@
             padding: 8px;
             width: 200px;
             cursor: pointer;
-            -webkit-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.62);
-            -moz-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.62);
-            box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.62);
+            color: black;
+			background-color: #cce9c6;
+			border-color: #39FF14
 
             & img {
                 width: 100%;
@@ -58,7 +58,7 @@
 }
 
 @media screen and (min-width:768px) {
-    .carSelect {
+    .cooperbtn {
 
     
         &__ul {
@@ -101,6 +101,20 @@
     
 }
 
+
+#app {
+    font-family: 'Helvetica';
+    width: 100%;
+    margin: 100px;
+} 
+ 
+
+
+@media screen and (min-width: 768px) {
+    #app {
+        width: 75%;
+    }
+}
 
 
 
@@ -215,8 +229,8 @@
 .btn {
 	border-radius: 14px;
 	color: #FFFFFF;
-	background-color: #828BF4;
-	border-color: #828BF4;
+	background-color: #39FF14;
+	border-color: #39FF14;
 	&:hover {
 		color: inherit;
 		background-color: transparent;
@@ -255,7 +269,7 @@ nav {
 		}
 		&:hover {
 			>a {
-				color: #828BF4;
+				color: #39FF14;
 				background-color: inherit;
 			}
 		}
@@ -263,13 +277,13 @@ nav {
 
 	.active {
 		a {
-			color: #828BF4;
+			color: #39FF14;
 			background-color: inherit;
 		}
 	}
 	a {
 		&:hover {
-			color: #828BF4;
+			color: #39FF14;
 			background-color: inherit;
 		}
 	}
@@ -296,7 +310,7 @@ nav {
 	text-align: center;
 	opacity: .2;
 	color: #FFFFFF;
-	background-color: #828BF4;
+	background-color: #39FF14;
 	i {
 		display: block;
 		width: 100%;
@@ -313,7 +327,7 @@ body {
 	background-color: #202020;
 }
 a {
-	color: #828BF4;
+	color: #39FF14;
 }
 .overlay {
 	color: #FFFFFF;
@@ -326,8 +340,8 @@ a {
 .btn.inverse {
 	&:hover {
 		color: #FFFFFF;
-		background-color: #828BF4;
-		border-color: #828BF4;
+		background-color: #39FF14;
+		border-color: #39FF14;
 	}
 	color: inherit;
 	background-color: transparent;
