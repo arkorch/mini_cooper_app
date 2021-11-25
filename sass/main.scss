@@ -8,16 +8,4 @@
 @import "modules/mystyles";
 
 
-#app {
-    font-family: 'Helvetica';
-    width: 100%;
-    margin: 0 auto;
-} 
- 
 
-
-@media screen and (min-width: 768px) {
-    #app {
-        width: 75%;
-    }
-}

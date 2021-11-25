@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Nov 25, 2021 at 04:46 AM
+-- Generation Time: Nov 23, 2021 at 01:13 PM
 -- Server version: 5.7.34
 -- PHP Version: 7.4.21
 
@@ -31,23 +31,23 @@ CREATE TABLE `tbl_specs` (
   `ID` int(11) NOT NULL,
   `Model` varchar(30) NOT NULL,
   `Price` varchar(8) NOT NULL,
-  `Fuel Economy` varchar(15) NOT NULL,
+  `Milage` varchar(10) NOT NULL,
   `Length` varchar(10) NOT NULL,
   `Width` varchar(10) NOT NULL,
   `Height` varchar(10) NOT NULL,
   `Engine` varchar(50) NOT NULL,
   `Horsepower` varchar(10) NOT NULL,
-  `Photo Angle 1` varchar(20) NOT NULL
+  `Picture` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `tbl_specs`
 --
 
-INSERT INTO `tbl_specs` (`ID`, `Model`, `Price`, `Fuel Economy`, `Length`, `Width`, `Height`, `Engine`, `Horsepower`, `Photo Angle 1`) VALUES
+INSERT INTO `tbl_specs` (`ID`, `Model`, `Price`, `Milage`, `Length`, `Width`, `Height`, `Engine`, `Horsepower`, `Picture`) VALUES
 (1, 'Mini 3 Door', '$23,490', '35 mpg', '162 in.', '74 in.', '58 in.', '1.5 L', '150 HP', 'pic1.png'),
 (2, 'Mini Convertable', '$30,000', '35 mpg', '180 in.', '75 in.', '68 in.', '2.0 L ', '200 HP', 'pic2.png'),
-(3, '2018 MINI Clubman', '$33,990', '34 mpg', '170 in.', '68 in.', '62 in.', '2.0 L', '250 HP', 'pic3.png'),
+(3, 'MINI Clubman', '$33,990', '34 mpg', '170 in.', '68 in.', '62 in.', '2.0 L', '250 HP', 'pic3.png'),
 (4, 'Mini Countryman', '$33,490', '28 mpg', '172 in.', '64 in.', '58 in.', '2.0 L ', '280 HP', 'pic4.png');
 
 --

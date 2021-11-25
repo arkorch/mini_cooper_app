@@ -1,15 +1,18 @@
 let errorCodes = {
-    404: 'Not found! Please check your URL',
-    500: 'Server is not responding.',
-    403: 'You shall not pass! Unless you have the creds, then sure go ahead.',
-    503: 'Service is unavailable! The servers are all having a coffee break.'
+    404: 'HTTP 404, 404 not found',
+    500: 'Internal Server Error.',
+    403: '403 Forbidden Error',
+    503: 'Error is an HTTP response status code'
 }
-
+//The Fetch call function
 async function fetchdata(sourceURL){
+    //Assign 
     let resource = await fetch(sourceURL).then(response => {
-        if (response.status !== 200) { // bang operator - means "does not equal" (or a falsy value)
-            throw new Error(`Danger Will Robinson! Here there be monsters! ERROR: ${response.status}`);
+        if (response.status !== 200) { 
+            //Create an error response if 200 is returned 
+            throw new Error(`The code is broken. ERROR: ${response.status}`);
         }
+        //Otherwise print page 
         return response;
     })
 
@@ -17,11 +20,12 @@ async function fetchdata(sourceURL){
     let dataset = await resource.json();
 
     return dataset[0];
-
+ 
 }
-
+//Function to post data
 async function postData(sourceURL) {
-    return "You are using the postData API endpoint.";
+    //Show in console
+    return "End of connection";
 }
-
+//Otherwise print page
 export { fetchdata, postData };

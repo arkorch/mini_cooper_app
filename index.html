@@ -15,7 +15,7 @@
 <body>
     <main id="app">
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('images/minibanner.jpeg');"> 
+<div class="bgded overlay" style="background-image:url('images/banner.jpeg');"> 
  
     <div class="wrapper row0">
       <div id="topbar" class="hoc clear"> 
@@ -70,16 +70,16 @@
 
 
    <!-- Button trigger for Vue Function -->
-  <div class="carSelect">
-    <ul class="carSelect__ul">
-        <li v-for="car in cars" class="carSelect__li"><button @click="showCar(car)"><br>{{car.Model}}</button></li>
+  <div class="cooperbtn">
+    <ul class="cooperbtn__ul">
+        <li v-for="car in cars" class="cooperbtn__li"><button @click="showCar(car)"><br>{{car.Model}}</button></li>
     </ul>
   </div>
            <!-- Box to fetch data from db -->
     <section class="carData">
         <div class="carBox"><h1>Model: <span>{{ currentCarData.Model }}</span></h1></div>
         <div class="carBox"><p>Price: <span>{{ currentCarData.Price }}</span></p></div>
-        <div class="carBox"><p>Milage: {{ currentCarData.FuelEconomy}}</p></div>
+        <div class="carBox"><p>Milage: {{ currentCarData.Milage}}</p></div>
         <div class="photoPanel"><img :src=" 'images/' " alt="Picture of Mini Cooper" class="carPhoto"></div>
         <section class="carDataBottom">
         <div class="carBox"><p>Engine: <br class="thestyle">{{ currentCarData.Engine}}</p></div>
