@@ -1,0 +1,425 @@
+.carSelect {
+    display: flex;
+    flex-direction: column;
+
+    &__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    
+    }
+
+    &__li {
+        margin: 6px;
+
+        & button {
+            border: none;
+            border-radius: 3px;
+            padding: 8px;
+            width: 200px;
+            cursor: pointer;
+            -webkit-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.62);
+            -moz-box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.62);
+            box-shadow: 0px 4px 12px -4px rgba(0,0,0,0.62);
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.carData {
+
+    .photoPanel {
+        .carPhoto {
+            display: block;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+
+            & img {
+                max-width: 570px;
+            }
+        }
+    }
+
+    .thestyle {
+        display: none;
+    }
+
+    .carDataBottom {
+
+        & :nth-child(even) {
+            background-color: rgb(240, 240, 240);
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .carSelect {
+
+    
+        &__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+            &__li {
+
+                & button { width: 150px; }
+            }
+        }
+    }
+
+
+    .carData {
+
+        .carBox {
+            display: inline;
+        }
+    }
+
+    .photoPanel {
+        align-items: center;
+        justify-items: center;
+    }
+
+    .carPhoto {
+        max-width: 570px;
+        justify-self: center;
+    }
+
+    .carBox {
+            & :first-child { font-size: 1.5em; }
+    }
+    .thestyle {
+    display: inline;
+    }
+
+    
+}
+
+
+
+
+/* Top Bar ----------- */
+/* Header ----------- */
+/* Page Intro ----------- */
+/* Footer ----------- */
+/* Copyright ----------- */
+/* Navigation ----------- */
+/* Top Navigation */
+/* Back to Top */
+/* Colours ----------- */
+/* Rows */
+/* Header */
+/* Page Intro */
+/* Footer */
+/* Copyright */
+/* Navigation */
+/* Max Wrapper Width - Laptop, Desktop etc. ----------- */
+/* Mobile Devices ----------- */
+/* Other ----------- */
+#topbar {
+	padding: 20px 0;
+	font-size: .8rem;
+	text-transform: uppercase;
+	i {
+		line-height: normal;
+	}
+}
+#header {
+	border-bottom: 1px solid;
+	border-color: rgba(255,255,255,.1);
+	#logo {
+		margin: 22px 0 0 0;
+		h1 {
+			margin: 0;
+			padding: 0;
+			font-size: 2rem;
+			font-variant: small-caps;
+		}
+		a {
+			color: inherit;
+		}
+	}
+}
+#pageintro {
+	padding: 200px 0;
+	color: #FFFFFF;
+	article {
+		display: block;
+		max-width: 60%;
+		margin: 0 auto;
+		text-transform: capitalize;
+		text-align: center;
+		p {
+			&:first-of-type {
+				margin: 0 0 30px 0;
+				padding: 0;
+				font-size: 2rem;
+			}
+		}
+	}
+	.heading {
+		font-size: 5rem;
+	}
+	footer {
+		margin-top: 50px;
+		.btn {
+			padding: 14px 25px 16px;
+			font-size: 1.2rem;
+		}
+	}
+}
+#footer {
+	padding: 80px 0 50px;
+	nav {
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		li {
+			display: inline;
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		a {
+			color: #FFFFFF;
+		}
+	}
+	hr {
+		border-color: rgba(255,255,255,.1);
+	}
+	.borderedbox {
+		border-color: rgba(255,255,255,.1);
+	}
+	.linklist {
+		li {
+			border-color: rgba(255,255,255,.1);
+		}
+	}
+}
+#copyright {
+	padding: 50px 0 80px;
+	border-top: 1px solid;
+	border-color: rgba(255,255,255,.2);
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+.btn {
+	border-radius: 14px;
+	color: #FFFFFF;
+	background-color: #828BF4;
+	border-color: #828BF4;
+	&:hover {
+		color: inherit;
+		background-color: transparent;
+		border-color: inherit;
+	}
+}
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ol {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+#mainav {
+	line-height: normal;
+	ul {
+		text-transform: uppercase;
+	}
+	li {
+		display: inline-block;
+		position: relative;
+		margin: 0 15px 0 0;
+		padding: 0;
+		&:last-child {
+			margin-right: 0;
+		}
+		a {
+			display: block;
+			padding: 30px 0;
+			color: inherit;
+		}
+		&:hover {
+			>a {
+				color: #828BF4;
+				background-color: inherit;
+			}
+		}
+	}
+
+	.active {
+		a {
+			color: #828BF4;
+			background-color: inherit;
+		}
+	}
+	a {
+		&:hover {
+			color: #828BF4;
+			background-color: inherit;
+		}
+	}
+}
+#breadcrumb {
+	line-height: normal;
+}
+.sidebar {
+	nav {
+		line-height: normal;
+	}
+}
+#backtotop {
+	z-index: 999;
+	display: inline-block;
+	position: fixed;
+	visibility: hidden;
+	bottom: 20px;
+	right: 20px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	text-align: center;
+	opacity: .2;
+	color: #FFFFFF;
+	background-color: #828BF4;
+	i {
+		display: block;
+		width: 100%;
+		height: 100%;
+		line-height: inherit;
+	}
+}
+#backtotop.visible {
+	visibility: visible;
+	opacity: .5;
+}
+body {
+	color: #A8A8A8;
+	background-color: #202020;
+}
+a {
+	color: #828BF4;
+}
+.overlay {
+	color: #FFFFFF;
+	background-color: inherit;
+	&::after {
+		color: inherit;
+		background-color: rgba(0,0,0,.55);
+	}
+}
+.btn.inverse {
+	&:hover {
+		color: #FFFFFF;
+		background-color: #828BF4;
+		border-color: #828BF4;
+	}
+	color: inherit;
+	background-color: transparent;
+	border-color: inherit;
+}
+.row4 {
+	color: #A8A8A8;
+}
+.row5 {
+	color: #A8A8A8;
+	a {
+		color: #A8A8A8;
+	}
+}
+@media screen and (min-width:1140px) {
+	.hoc {
+		max-width: 1140px;
+	}
+}
+@media screen and (min-width:978px) and (max-width:1140px) {
+	.hoc {
+		max-width: 95%;
+	}
+}
+@media screen and (max-width:978px) {
+	.hoc {
+		max-width: 90%;
+	}
+	#header {
+		padding: 30px 0;
+		#logo {
+			margin-top: 0;
+		}
+	}
+	#mainav {
+		ul {
+			display: none;
+		}
+		form {
+			display: block;
+			margin-top: 2px;
+		}
+	}
+	#copyright {
+		p {
+			&:first-of-type {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width:750px) {
+	.fl_left {
+		display: block;
+		float: none;
+	}
+	.fl_right {
+		display: block;
+		float: none;
+	}
+	#topbar {
+		text-align: center;
+	}
+	#header {
+		text-align: center;
+		#logo {
+			margin: 0 0 15px 0;
+		}
+	}
+	#pageintro {
+		article {
+			max-width: none;
+		}
+		.heading {
+			margin-bottom: 20px;
+			font-size: 2.5rem;
+		}
+	}
+}
+@media screen and (max-width:650px) {
+	.inline {
+		li {
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+	.pushright {
+		li {
+			margin-right: 0;
+		}
+	}
+}
+
+
+
